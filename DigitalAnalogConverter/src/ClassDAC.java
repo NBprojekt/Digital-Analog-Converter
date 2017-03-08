@@ -20,9 +20,6 @@ public class ClassDAC {
     private double Rges;    // Gesamtwiedestand
     
         // Konstruktoren
-    public ClassDAC() {
-        
-    }
     public ClassDAC(double Eingangsstrom, double Wiederstand) {
         // Auslesen der Werte
         Uges    = Eingangsstrom;
