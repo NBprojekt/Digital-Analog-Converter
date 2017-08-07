@@ -92,15 +92,15 @@ public class FormMain extends javax.swing.JFrame {
         labHeadline.setName("labHeadline"); // NOI18N
 
         labHinweis.setFont(new java.awt.Font("Bitstream Vera Serif", 2, 16)); // NOI18N
-        labHinweis.setText("Bitte geben Sie die fogenden Werte ein :");
+        labHinweis.setText("Please insert the following values:");
         labHinweis.setName("labHinweis"); // NOI18N
 
         labEingangsspannung.setFont(new java.awt.Font("Bitstream Vera Serif", 2, 16)); // NOI18N
-        labEingangsspannung.setText("Eingangsspannung ( in V )");
+        labEingangsspannung.setText("Input ( in V )");
         labEingangsspannung.setName("labEingangsspannung"); // NOI18N
 
         labWiederstand.setFont(new java.awt.Font("Bitstream Vera Serif", 2, 16)); // NOI18N
-        labWiederstand.setText("Wiederstand ( in kilo Ohm )");
+        labWiederstand.setText("Resistor ( in kΩ )");
         labWiederstand.setName("labWiederstand"); // NOI18N
 
         txtEingangsspannung.setFont(new java.awt.Font("Bitstream Vera Serif", 2, 15)); // NOI18N
@@ -110,7 +110,7 @@ public class FormMain extends javax.swing.JFrame {
         txtWiederstand.setName("txtWiederstand"); // NOI18N
 
         cmdBerechnen.setFont(new java.awt.Font("Bitstream Vera Serif", 2, 16)); // NOI18N
-        cmdBerechnen.setText("Berechnen");
+        cmdBerechnen.setText("calculate");
         cmdBerechnen.setName("cmdBerechnen"); // NOI18N
         cmdBerechnen.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -134,7 +134,7 @@ public class FormMain extends javax.swing.JFrame {
         labDez4.setText("3");
 
         labS1.setFont(new java.awt.Font("Bitstream Vera Serif", 2, 16)); // NOI18N
-        labS1.setText("S1");
+        labS1.setText("Bit 1");
 
         labB1.setFont(new java.awt.Font("Bitstream Vera Serif", 2, 16)); // NOI18N
         labB1.setText("0");
@@ -149,7 +149,7 @@ public class FormMain extends javax.swing.JFrame {
         labB4.setText("1");
 
         labS0.setFont(new java.awt.Font("Bitstream Vera Serif", 2, 16)); // NOI18N
-        labS0.setText("S0");
+        labS0.setText("Bit 0");
 
         labA1.setFont(new java.awt.Font("Bitstream Vera Serif", 2, 16)); // NOI18N
         labA1.setText("0");
@@ -164,7 +164,7 @@ public class FormMain extends javax.swing.JFrame {
         labA4.setText("1");
 
         labUA.setFont(new java.awt.Font("Bitstream Vera Serif", 2, 16)); // NOI18N
-        labUA.setText("UA in V");
+        labUA.setText("Out in V");
 
         labUA0.setFont(new java.awt.Font("Bitstream Vera Serif", 2, 16)); // NOI18N
         labUA0.setText("U");
@@ -179,14 +179,14 @@ public class FormMain extends javax.swing.JFrame {
         labUA3.setText("U");
 
         radS1_0.setSelected(true);
-        radS1_0.setText("S1 = 0");
+        radS1_0.setText("Bit 1 = 0");
         radS1_0.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 radS1_0MouseClicked(evt);
             }
         });
 
-        radS1_1.setText("S1 = 1");
+        radS1_1.setText("Bit 1 = 1");
         radS1_1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 radS1_1MouseClicked(evt);
@@ -194,14 +194,14 @@ public class FormMain extends javax.swing.JFrame {
         });
 
         radS0_0.setSelected(true);
-        radS0_0.setText("S0 = 0");
+        radS0_0.setText("Bit 0 = 0");
         radS0_0.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 radS0_0MouseClicked(evt);
             }
         });
 
-        radS0_1.setText("S0 = 1");
+        radS0_1.setText("Bit 0 = 1");
         radS0_1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 radS0_1MouseClicked(evt);
@@ -215,11 +215,10 @@ public class FormMain extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(104, 104, 104)
-                .addComponent(labHeadline)
-                .addContainerGap(471, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(104, 104, 104)
+                        .addComponent(labHeadline))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(52, 52, 52)
                         .addComponent(labHinweis))
@@ -269,7 +268,7 @@ public class FormMain extends javax.swing.JFrame {
                                     .addGap(0, 0, Short.MAX_VALUE))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                     .addComponent(labWiederstand)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(txtWiederstand, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                     .addComponent(labEingangsspannung)
@@ -285,10 +284,10 @@ public class FormMain extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(radS0_0)
-                                    .addComponent(radS0_1))))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(labBild, javax.swing.GroupLayout.PREFERRED_SIZE, 461, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(63, 63, 63))
+                                    .addComponent(radS0_1))))
+                        .addGap(54, 54, 54)
+                        .addComponent(labBild, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -296,7 +295,7 @@ public class FormMain extends javax.swing.JFrame {
                 .addGap(23, 23, 23)
                 .addComponent(labHeadline)
                 .addGap(47, 47, 47)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(labHinweis)
                         .addGap(18, 18, 18)
@@ -346,7 +345,9 @@ public class FormMain extends javax.swing.JFrame {
                             .addComponent(labB4)
                             .addComponent(labA4)
                             .addComponent(labUA3)))
-                    .addComponent(labBild, javax.swing.GroupLayout.PREFERRED_SIZE, 317, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(labBild, javax.swing.GroupLayout.PREFERRED_SIZE, 317, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(8, 8, 8)))
                 .addContainerGap(38, Short.MAX_VALUE))
         );
 

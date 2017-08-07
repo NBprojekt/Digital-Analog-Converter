@@ -34,12 +34,11 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="104" max="-2" attributes="0"/>
-              <Component id="labHeadline" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="471" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="104" max="-2" attributes="0"/>
+                      <Component id="labHeadline" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
                       <Component id="labHinweis" min="-2" max="-2" attributes="0"/>
@@ -102,7 +101,7 @@
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="labWiederstand" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="24" max="32767" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                                   <Component id="txtWiederstand" min="-2" pref="68" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -127,11 +126,11 @@
                               </Group>
                           </Group>
                       </Group>
+                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                      <Component id="labBild" min="-2" pref="322" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="labBild" min="-2" pref="461" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+              <EmptySpace pref="26" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -141,7 +140,7 @@
               <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
               <Component id="labHeadline" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Component id="labHinweis" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -201,7 +200,10 @@
                           <Component id="labUA3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Component id="labBild" min="-2" pref="317" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="labBild" min="-2" pref="317" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace pref="38" max="32767" attributes="0"/>
           </Group>
@@ -223,7 +225,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Bitstream Vera Serif" size="16" style="2"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Bitte geben Sie die fogenden Werte ein :"/>
+        <Property name="text" type="java.lang.String" value="Please insert the following values:"/>
         <Property name="name" type="java.lang.String" value="labHinweis" noResource="true"/>
       </Properties>
     </Component>
@@ -232,7 +234,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Bitstream Vera Serif" size="16" style="2"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Eingangsspannung ( in V )"/>
+        <Property name="text" type="java.lang.String" value="Input ( in V )"/>
         <Property name="name" type="java.lang.String" value="labEingangsspannung" noResource="true"/>
       </Properties>
     </Component>
@@ -241,7 +243,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Bitstream Vera Serif" size="16" style="2"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Wiederstand ( in kilo Ohm )"/>
+        <Property name="text" type="java.lang.String" value="Resistor ( in k&#x3a9; )"/>
         <Property name="name" type="java.lang.String" value="labWiederstand" noResource="true"/>
       </Properties>
     </Component>
@@ -266,7 +268,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Bitstream Vera Serif" size="16" style="2"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Berechnen"/>
+        <Property name="text" type="java.lang.String" value="calculate"/>
         <Property name="name" type="java.lang.String" value="cmdBerechnen" noResource="true"/>
       </Properties>
       <Events>
@@ -318,7 +320,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Bitstream Vera Serif" size="16" style="2"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="S1"/>
+        <Property name="text" type="java.lang.String" value="Bit 1"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="labB1">
@@ -358,7 +360,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Bitstream Vera Serif" size="16" style="2"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="S0"/>
+        <Property name="text" type="java.lang.String" value="Bit 0"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="labA1">
@@ -398,7 +400,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Bitstream Vera Serif" size="16" style="2"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="UA in V"/>
+        <Property name="text" type="java.lang.String" value="Out in V"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="labUA0">
@@ -436,7 +438,7 @@
     <Component class="javax.swing.JRadioButton" name="radS1_0">
       <Properties>
         <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" value="S1 = 0"/>
+        <Property name="text" type="java.lang.String" value="Bit 1 = 0"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="radS1_0MouseClicked"/>
@@ -444,7 +446,7 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="radS1_1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="S1 = 1"/>
+        <Property name="text" type="java.lang.String" value="Bit 1 = 1"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="radS1_1MouseClicked"/>
@@ -453,7 +455,7 @@
     <Component class="javax.swing.JRadioButton" name="radS0_0">
       <Properties>
         <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" value="S0 = 0"/>
+        <Property name="text" type="java.lang.String" value="Bit 0 = 0"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="radS0_0MouseClicked"/>
@@ -461,7 +463,7 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="radS0_1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="S0 = 1"/>
+        <Property name="text" type="java.lang.String" value="Bit 0 = 1"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="radS0_1MouseClicked"/>
