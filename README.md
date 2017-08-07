@@ -20,7 +20,7 @@ To get results just insert the input voltage and the resistor,<br>
 tick the radiobuttons to select which switch is on or of.<br>
 Finally press the calculate button and get anazed.
 
-![Screenshot](/screen.png)
+![Screenshot](/screenshot.png)
 
 ## License
 
